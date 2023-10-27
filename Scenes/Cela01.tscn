@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://blbrmlk2mlgml"]
+
+[ext_resource type="Theme" uid="uid://cqm7tm6wa15qi" path="res://Art/Themes/Text.tres" id="1_8hnm8"]
+[ext_resource type="Script" path="res://Scripts/SceneManager.cs" id="1_b638w"]
+[ext_resource type="AudioStream" uid="uid://u40ixwgr4et7" path="res://Art/Sounds/Typing.wav" id="3_nblvb"]
+
+[node name="Cela 01" type="CanvasLayer"]
+script = ExtResource("1_b638w")
+advText = "Você esta numa cela de prisão, e quer escapar. Possui alguns lençois sujos na cama, um espelho na parede e uma porta trancada por fora."
+optText = "Pressione L para ver os Lençois, E para o Espelho e P para a porta"
+inputScenes = {
+"lock": "Porta 01",
+"mirror": "Espelho",
+"sheets": "Lençol 01"
+}
+
+[node name="AdventureText" type="Label" parent="."]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -174.0
+offset_bottom = 181.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_8hnm8")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="OptionText" type="Label" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -164.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("1_8hnm8")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_nblvb")

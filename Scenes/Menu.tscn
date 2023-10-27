@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://l4k25mm5w8tp"]
+[gd_scene load_steps=6 format=3 uid="uid://l4k25mm5w8tp"]
 
 [ext_resource type="Theme" uid="uid://cqm7tm6wa15qi" path="res://Art/Themes/Text.tres" id="1_n2n32"]
+[ext_resource type="Script" path="res://Scripts/Menu.cs" id="1_u5slr"]
 
 [sub_resource type="Animation" id="Animation_cxo3k"]
 resource_name = "Idle"
@@ -40,6 +41,7 @@ _data = {
 }
 
 [node name="Menu" type="CanvasLayer"]
+script = ExtResource("1_u5slr")
 
 [node name="Label" type="Label" parent="."]
 anchors_preset = 12
@@ -50,7 +52,7 @@ offset_top = -90.0
 grow_horizontal = 2
 grow_vertical = 0
 theme = ExtResource("1_n2n32")
-text = "Pressione Start"
+text = "Pressione Enter"
 horizontal_alignment = 1
 vertical_alignment = 1
 

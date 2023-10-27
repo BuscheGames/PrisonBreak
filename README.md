@@ -27,6 +27,9 @@ Your life in prison has to end, all the torture and mistreatment can no longer h
 
 [TL;DR Go to Gameplay](#3-gameplay)
 
+![Menu Inicial](ReadMe/Menu-Inicial.jpg)
+Menu Inicial
+
 ## 3. Gameplay
 ### 3.1 Objective
 
