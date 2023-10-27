@@ -12,7 +12,6 @@ public partial class SceneManager : CanvasLayer {
 	Label _optLabel;
 	SceneSetup _sceneSetup;
 
-	// Called when the node enters the scene tree for the first time.
 	public override void _Ready() {
 		_advLabel = GetNode<Label>("AdventureText");
 		_advLabel.Text = "";

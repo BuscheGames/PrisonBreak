@@ -5,7 +5,7 @@
 
 [node name="Cela 01" type="CanvasLayer"]
 script = ExtResource("1_b638w")
-advText = "Você esta numa cela de prisão, e quer escapar. Possui alguns lençois sujos na cama, um espelho na parede e uma porta trancada por fora."
+advText = "Você esta numa cela de prisão, e quer escapar. Na cela possui alguns lençois sujos na cama, um espelho na parede e uma porta trancada por fora."
 optText = "Pressione L para ver os Lençois, E para o Espelho e P para a Porta"
 inputScenes = {
 "lock": "Porta 01",

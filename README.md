@@ -6,11 +6,11 @@
   - [Summary](#summary)
   - [1. Description](#1-description)
   - [2. General Information](#2-general-information)
-    - [2.1 History](#21-history)
-    - [2.2 Screenshots](#22-screenshots)
+	- [2.1 History](#21-history)
+	- [2.2 Screenshots](#22-screenshots)
   - [3. Gameplay](#3-gameplay)
-    - [3.1 Objective](#31-objective)
-    - [3.2 Controls](#32-controls)
+	- [3.1 Objective](#31-objective)
+	- [3.2 Controls](#32-controls)
 
 ------------------------------
 
