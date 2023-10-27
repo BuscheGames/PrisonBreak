@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://dgrxkm1pprm66"]
+[gd_scene load_steps=11 format=3 uid="uid://dgrxkm1pprm66"]
 
 [ext_resource type="Script" path="res://Scripts/Main.cs" id="1_41a4a"]
 [ext_resource type="Texture2D" uid="uid://xqoe74lh0ttu" path="res://Art/prison_title.png" id="1_a5rso"]
 [ext_resource type="PackedScene" uid="uid://l4k25mm5w8tp" path="res://Scenes/Menu.tscn" id="2_mat8b"]
 [ext_resource type="Script" path="res://Scripts/SceneSetup.cs" id="3_dle53"]
 [ext_resource type="PackedScene" uid="uid://blbrmlk2mlgml" path="res://Scenes/Cela01.tscn" id="4_uwlgn"]
+[ext_resource type="PackedScene" uid="uid://ucmvp8yfwshj" path="res://Scenes/Espelho.tscn" id="5_7581x"]
+[ext_resource type="AudioStream" uid="uid://d04d67hvrg2lm" path="res://Art/Sounds/Background.mp3" id="6_ubyo5"]
 
 [sub_resource type="Resource" id="Resource_uhcto"]
 script = ExtResource("3_dle53")
@@ -16,9 +18,14 @@ script = ExtResource("3_dle53")
 scene = ExtResource("4_uwlgn")
 sceneName = "Cela 01"
 
+[sub_resource type="Resource" id="Resource_0e50f"]
+script = ExtResource("3_dle53")
+scene = ExtResource("5_7581x")
+sceneName = "Espelho"
+
 [node name="Main" type="Node"]
 script = ExtResource("1_41a4a")
-scenes = Array[Object]([SubResource("Resource_uhcto"), SubResource("Resource_cc7ap")])
+scenes = Array[Object]([SubResource("Resource_uhcto"), SubResource("Resource_cc7ap"), SubResource("Resource_0e50f")])
 
 [node name="HUD" type="CanvasLayer" parent="."]
 
@@ -37,3 +44,8 @@ offset_bottom = 164.0
 grow_horizontal = 2
 size_flags_horizontal = 4
 texture = ExtResource("1_a5rso")
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_ubyo5")
+volume_db = -5.0
+autoplay = true

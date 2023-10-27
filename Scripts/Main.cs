@@ -26,7 +26,11 @@ public partial class Main : Node {
 		if (_currentScene != null) _currentScene.QueueFree();
 		_currentScene = (CanvasLayer) scene.Instantiate();
 		AddChild(_currentScene);
+	}
 
+	public void PlaySelected() {
+		var selected = GD.Load<PackedScene>("res://Scenes/Selected.tscn").Instantiate();
+		GetTree().Root.AddChild(selected);
 	}
 
 }

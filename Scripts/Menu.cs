@@ -10,6 +10,7 @@ public partial class Menu : CanvasLayer {
 
     public override void _Process(double delta) {
 		if (Input.IsActionPressed("start")) {
+			Main.Instance.PlaySelected();
 			Main.Instance.InstantiateScene(_sceneSetup.scene);
 		}
 	}

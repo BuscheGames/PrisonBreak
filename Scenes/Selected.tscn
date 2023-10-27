@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://baaqwmicj4a4k"]
+
+[ext_resource type="AudioStream" uid="uid://onjg1waru2au" path="res://Art/Sounds/Selected.mp3" id="1_tt54v"]
+[ext_resource type="Script" path="res://Scripts/Selected.cs" id="2_hslfn"]
+
+[node name="Selected" type="AudioStreamPlayer"]
+stream = ExtResource("1_tt54v")
+volume_db = 20.0
+autoplay = true
+script = ExtResource("2_hslfn")
+
+[connection signal="finished" from="." to="." method="OnAudioFinished"]
