@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqbukhx8numsa"]
+
+[ext_resource type="Script" path="res://Scripts/SceneManager.cs" id="1_gxhao"]
+[ext_resource type="Theme" uid="uid://cqm7tm6wa15qi" path="res://Art/Themes/Text.tres" id="2_68cxs"]
+
+[node name="Corredor 01" type="CanvasLayer"]
+script = ExtResource("1_gxhao")
+advText = "Você está fora da cela, mas não de perigo. Você está no corredor, ao lado tem um armário e na frente escadas que vão para o pátio. Tem algo brilhando no chão."
+optText = "Pressione A para ir no Armário, I para Inspecionar o chão e E para ir nas Escadas."
+inputScenes = {
+"closet": "Armário 01",
+"floor": "Chão",
+"stairs": "Escadas 01"
+}
+
+[node name="AdventureText" type="Label" parent="."]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -174.0
+offset_bottom = 181.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_68cxs")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="OptionText" type="Label" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -164.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2_68cxs")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
