@@ -21,7 +21,10 @@ public partial class SceneManager : CanvasLayer {
 
     public override void _UnhandledInput(InputEvent @event) {
         foreach(var item in inputScenes) {
-			if (@event.IsActionPressed(item.Key)) {
+			if (@event.IsActionPressed(item.Key) && item.Key == "quit") {
+				GetTree().Quit();
+			}
+			else if (@event.IsActionPressed(item.Key)) {
 				Main.Instance.PlaySelected();
 				_sceneSetup = Main.Instance.GetSceneSetup(item.Value);
 				if (_sceneSetup != null) Main.Instance.InstantiateScene(_sceneSetup.scene);

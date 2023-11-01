@@ -6,11 +6,11 @@
   - [Summary](#summary)
   - [1. Description](#1-description)
   - [2. General Information](#2-general-information)
-	- [2.1 History](#21-history)
-	- [2.2 Screenshots](#22-screenshots)
+    - [2.1 History](#21-history)
+    - [2.2 Screenshots](#22-screenshots)
   - [3. Gameplay](#3-gameplay)
-	- [3.1 Objective](#31-objective)
-	- [3.2 Controls](#32-controls)
+    - [3.1 Objective](#31-objective)
+    - [3.2 Controls](#32-controls)
 
 ------------------------------
 
@@ -28,7 +28,10 @@ Your life in prison has to end, all the torture and mistreatment can no longer h
 [TL;DR Go to Gameplay](#3-gameplay)
 
 ![Menu Inicial](ReadMe/Menu-Inicial.jpg)
-Menu Inicial
+<p>Menu Inicial</p>
+
+![Tela do Jogo](ReadMe/Tela-Jogo.jpg)
+<p>Tela do Jogo</p>
 
 ## 3. Gameplay
 ### 3.1 Objective
