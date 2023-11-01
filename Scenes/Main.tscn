@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://dgrxkm1pprm66"]
+[gd_scene load_steps=35 format=3 uid="uid://dgrxkm1pprm66"]
 
 [ext_resource type="Script" path="res://Scripts/Main.cs" id="1_41a4a"]
 [ext_resource type="Texture2D" uid="uid://xqoe74lh0ttu" path="res://Art/prison_title.png" id="1_a5rso"]
@@ -16,6 +16,9 @@
 [ext_resource type="PackedScene" uid="uid://b7ry8cy8cubko" path="res://Scenes/Corredor02.tscn" id="12_f3dx1"]
 [ext_resource type="PackedScene" uid="uid://bxdw7km4sho6l" path="res://Scenes/Corredor03.tscn" id="13_jsqym"]
 [ext_resource type="PackedScene" uid="uid://3nxsxnjqvndc" path="res://Scenes/Corredor04.tscn" id="14_xrec8"]
+[ext_resource type="PackedScene" uid="uid://cgwxiwqurma3i" path="res://Scenes/Chao.tscn" id="15_2p1ox"]
+[ext_resource type="PackedScene" uid="uid://da7dckducftbn" path="res://Scenes/Armario01.tscn" id="16_6wkbc"]
+[ext_resource type="PackedScene" uid="uid://beyaenru1kqee" path="res://Scenes/Armario02.tscn" id="17_3l20w"]
 
 [sub_resource type="Resource" id="Resource_uhcto"]
 script = ExtResource("3_dle53")
@@ -77,9 +80,25 @@ script = ExtResource("3_dle53")
 scene = ExtResource("14_xrec8")
 sceneName = "Corredor 04"
 
+[sub_resource type="Resource" id="Resource_jtut1"]
+script = ExtResource("3_dle53")
+scene = ExtResource("15_2p1ox")
+sceneName = "Chão"
+
+[sub_resource type="Resource" id="Resource_cyidp"]
+script = ExtResource("3_dle53")
+scene = ExtResource("16_6wkbc")
+sceneName = "Armário 01"
+
+[sub_resource type="Resource" id="Resource_fvc4k"]
+script = ExtResource("3_dle53")
+scene = ExtResource("17_3l20w")
+sceneName = "Armário 02"
+
 [node name="Main" type="Node"]
 script = ExtResource("1_41a4a")
-scenes = Array[Object]([SubResource("Resource_uhcto"), SubResource("Resource_cc7ap"), SubResource("Resource_0e50f"), SubResource("Resource_n3dur"), SubResource("Resource_dnybq"), SubResource("Resource_or6ih"), SubResource("Resource_sk3mr"), SubResource("Resource_mbj1x"), SubResource("Resource_cppe4"), SubResource("Resource_712fo"), SubResource("Resource_l1ufy"), SubResource("Resource_pykk3")])
+typingDuration = 0.04
+scenes = Array[Object]([SubResource("Resource_uhcto"), SubResource("Resource_cc7ap"), SubResource("Resource_0e50f"), SubResource("Resource_n3dur"), SubResource("Resource_dnybq"), SubResource("Resource_or6ih"), SubResource("Resource_sk3mr"), SubResource("Resource_mbj1x"), SubResource("Resource_cppe4"), SubResource("Resource_712fo"), SubResource("Resource_l1ufy"), SubResource("Resource_pykk3"), SubResource("Resource_jtut1"), SubResource("Resource_cyidp"), SubResource("Resource_fvc4k")])
 
 [node name="HUD" type="CanvasLayer" parent="."]
 

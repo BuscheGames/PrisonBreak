@@ -6,7 +6,7 @@
 [node name="Porta 02" type="CanvasLayer"]
 script = ExtResource("1_bqkfo")
 advText = "Você cuidadosamente coloca o espelho pelas barras, assim você consegue ver o teclado numérico e as digitais. Ao pressionar os botões você ouve um click."
-optText = "Pressione C para entar no Corredor ou R para Retornar a cela."
+optText = "Pressione C para entrar no Corredor ou R para Retornar a cela."
 inputScenes = {
 "corridor": "Corredor 01",
 "return": "Cela 02"

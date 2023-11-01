@@ -3,6 +3,7 @@ using Godot.Collections;
 
 public partial class Main : Node {
 
+	[Export] public float typingDuration = 0.03f;
 	[Export] Array<SceneSetup> scenes;
 
 	public static Main Instance;

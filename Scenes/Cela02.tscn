@@ -7,6 +7,7 @@
 script = ExtResource("1_umdwl")
 advText = "Você ainda está na cela e ainda quer escapar. Na cela possui alguns lençois sujos na cama, um espelho faltando um pedaço na parede e uma porta ainda trancada."
 optText = "Pressione L para ver os Lençois ou P para a Porta"
+typeTime = 0.03
 inputScenes = {
 "lock": "Porta 02",
 "sheets": "Lençol 02"

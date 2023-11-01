@@ -5,7 +5,6 @@ public partial class SceneManager : CanvasLayer {
 
 	[Export] string advText;
 	[Export] string optText;
-	[Export] float typeTime = 0.05f;
 	[Export] Dictionary<string, string> inputScenes;
 
 	Label _advLabel;
@@ -33,9 +32,9 @@ public partial class SceneManager : CanvasLayer {
     async void TypeLabels() {
 		foreach(var character in advText) {
 			_advLabel.Text += character;
-			await ToSignal(GetTree().CreateTimer(typeTime), "timeout");
+			await ToSignal(GetTree().CreateTimer(Main.Instance.typingDuration), "timeout");
 		}
-		await ToSignal(GetTree().CreateTimer(.5f), "timeout");
+		await ToSignal(GetTree().CreateTimer(.3f), "timeout");
 		_optLabel.Text = optText;
 	}
 }

@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgwxiwqurma3i"]
+
+[ext_resource type="Script" path="res://Scripts/SceneManager.cs" id="1_cj221"]
+[ext_resource type="Theme" uid="uid://cqm7tm6wa15qi" path="res://Art/Themes/Text.tres" id="2_741k4"]
+
+[node name="Chao" type="CanvasLayer"]
+script = ExtResource("1_cj221")
+advText = "Vasculhando pelo chão sujo, você encontra um grampo de cabelo."
+optText = "Pressione P para Pegar o grampo ou R para Retornar ao corredor"
+inputScenes = {
+"return": "Corredor 01",
+"take": "Corredor 02"
+}
+
+[node name="AdventureText" type="Label" parent="."]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -174.0
+offset_bottom = 181.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_741k4")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="OptionText" type="Label" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -164.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2_741k4")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
